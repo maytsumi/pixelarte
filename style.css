@@ -1116,7 +1116,7 @@ header {
     .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
     .footer-bar { flex-direction: column; gap: 1rem; text-align: center; }
 
-    .hero-scroll { bottom: 1.8rem; }
+    .hero-scroll { bottom: 2.5rem; }
 
     body { cursor: auto; }
     .cursor, .cursor-follower { display: none; }
