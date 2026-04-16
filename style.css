@@ -1445,3 +1445,54 @@ header {
 .servico-central .em-breve-banner {
     margin-bottom: 1.5rem;
 }
+
+/* WhatsApp Flutuante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #25D366;
+    color: #fff;
+    padding: 0.85rem 1.2rem 0.85rem 1rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    animation: wpp-pulse 2.5s infinite;
+}
+
+.whatsapp-float:hover {
+    background: #1ebe5d;
+    color: #fff;
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
+    animation: none;
+}
+
+.whatsapp-label {
+    white-space: nowrap;
+}
+
+@keyframes wpp-pulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45); }
+    50%       { box-shadow: 0 4px 28px rgba(37, 211, 102, 0.75), 0 0 0 6px rgba(37, 211, 102, 0.12); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 1.2rem;
+        right: 1.2rem;
+        padding: 0.85rem;
+        border-radius: 50%;
+    }
+    .whatsapp-label {
+        display: none;
+    }
+}
